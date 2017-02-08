@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kopi Calentito</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Atma|Boogaloo|Carter+One|Kavoon|Open+Sans|Oregano|Passion+One|Rakkas" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <!--==============================================================================================-->
+    <!-- HEADER SECTION -->
+    <!--==============================================================================================-->
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+
+          <!-- NAVBAR -->
+          <!--........................................................................................-->
+          <div class="navbar-header">
+
+            <!-- ===== Logo ===== -->
+            <a href="index.html" class="pull-left">
+              <div id="logo-img" alt="Logo"></div>
+            </a>
+
+            <!-- ===== Brand ===== -->
+            <div class="navbar-brand">
+              <a href="index.html">
+                <h1>Kopi Calentito</h1>
+              </a>
+            </div><!--/navbar-brand-->
+            
+            <!-- ===== Collapsable Navigator ===== -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span> <!--The navigator's 3 stripes-->
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          
+          </div><!--/.navbar-header-->
+
+          <!-- NAVBAR CONTENTS -->
+          <!--........................................................................................-->
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+
+              <li class="hidden-xs">
+                <a href="index.html">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <br class="hidden-xs">
+                  Inicio
+                </a>
+              </li>
+              <li class="hidden-xs">
+                <a href="sobre.html">
+                  <span class="glyphicon glyphicon-info-sign"></span>
+                  <br class="hidden-xs">
+                  Sobre <br class="hidden-xs"> nosotros
+                </a>
+              </li>
+
+              <li class="visible-xs">
+                <a href="horarios.html">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                  <br class="hidden-xs">
+                  Horarios
+                </a>
+              </li>
+              <li class="visible-xs">
+                <a class="pw-a" onclick="pw_deberes()">
+                  <span class="glyphicon glyphicon-pencil"></span>
+                  <br class="hidden-xs">
+                  Deberes
+                </a>
+              </li>
+              <li class="visible-xs">
+                <a class="pw-a" onclick="pw_curso()">
+                  <span class="glyphicon glyphicon-book"></span>
+                  <br class="hidden-xs">
+                  Materiales de curso
+                </a>
+              </li>
+              <li class="visible-xs">
+                <a href="otros.html">
+                  <span class="glyphicon glyphicon-duplicate"></span>
+                  <br class="hidden-xs">
+                  Otros materiales
+                </a>
+              </li>
+              <li class="visible-xs">
+                <a href="examenes.html">
+                  <span class="glyphicon glyphicon-education"></span>
+                  <br class="hidden-xs">
+                  Examenes de DELE
+                </a>
+              </li>
+              <li class="visible-xs">
+                <a href="contratos.html">
+                  <span class="glyphicon glyphicon-check"></span>
+                  <br class="hidden-xs">
+                  Contratos
+                </a>
+              </li>
+
+            </ul><!--/#nav-list-->
+          </div><!--/.navbar-collapse-->
+
+        </div><!--/.container-->
+      </nav><!--/#header-nav-->
+    </header><!--/HEADER SECTION-->
+
+    <!--==============================================================================================-->
+    <!-- BULK SECTION -->
+    <!--==============================================================================================-->
+    <div class="container-fluid">
+      
+      <!-- HOME-TILES -->
+      <!--........................................................................................-->
+      <aside id="home-tiles" class="hidden-xs col-sm-3 col-md-3 col-lg-3">
+        <ul class="nav nav-pills nav-stacked">
+          
+          <li role="presentation">
+            <a href="horarios.html">
+              <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">Horarios</div>
+              </div>
+            </a>
+          </li>
+          <hr>
+          <li role="presentation">
+            <a class="pw-a" onclick="pw_deberes()">
+              <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <span class="glyphicon glyphicon-pencil"></span>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">Deberes</div>
+              </div>
+            </a>
+          </li>
+          <hr>
+          <li role="presentation">
+            <a class="pw-a" onclick="pw_curso()">
+              <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <span class="glyphicon glyphicon-book"></span>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">Materiales de curso</div>
+              </div>
+            </a>
+          </li>
+          <hr>
+          <li role="presentation">
+            <a href="otros.html">
+              <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <span class="glyphicon glyphicon-duplicate"></span>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">Otros materiales</div>
+              </div>
+            </a>
+          </li>
+          <hr>
+          <li role="presentation">
+            <a href="examenes.html">
+              <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <span class="glyphicon glyphicon-education"></span>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">Examenes de DELE</div>
+              </div>
+            </a>
+          </li>
+          <hr>
+          <li role="presentation">
+            <a href="contratos.html">
+              <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <span class="glyphicon glyphicon-check"></span>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">Contratos</div>
+              </div>
+            </a>
+          </li>
+          <hr>
+        </ul><!--/.nav-pills nav-stacked-->
+      </aside><!--/#home-tiles-->
+
+      <!-- MAIN-SECTION -->
+      <!--........................................................................................-->
+      <div id="main-content" class="col-sm-9 col-md-9 col-lg-9">
+
+        <!-- ===== ??? ===== -->
+        <!--
+        <h2>Contratos</h2>
+
+        <h3>Las detalles del curso</h3>
+        <h4>Sobre</h4>
+        <table>
+          <tr>
+            <td>Duración:</td>
+            <td>10 clases al curso</td>
+          </tr>
+          <tr>
+            <td>Frecuencia:</td>
+            <td>1 clase a la semana</td>
+          </tr>
+          <tr>
+            <td>Horas:</td>
+            <td>2 horas por clase <br> (7:00 pm to 9:00 pm)</td>
+          </tr>
+          <tr>
+            <td>Matricula:</td>
+            <td>300.00$ por cada estudiante</td>
+          </tr>
+          <tr>
+            <td>Nivel:</td>
+            <td>DELE B1.1</td>
+          </tr>
+          <tr>
+            <td>Lugar:</td>
+            <td>Millenia Walk <br> 9 Raffles Boulevard, Singapore 039596 <br> <i>(El lugar puede cambiar cada clase.)</i></td>
+          </tr>
+        </table>
+        -->
+        
+        <h2>Los términos del acuerdo</h2>
+        
+        <h3>El currículo</h3>
+        
+        <h4>Art. 1 – El estilo de la clase</h4>
+        <p>El estilo de la clase está destinado a ser informal en vez del estilo de aula formal. Los estudiantes son invitados a participar activamente en las clases y la conversación.</p>
+        <p>La escritura a mano en papel u otro material se puede utilizar en lugar de una pizarra blanca.</p>
+
+        <h4>Art. 2 – El plan de estudios</h4>
+        <p>El plan de estudios puede seguir libremente el currículo de los Diplomas de Español como Lengua Extranjera (DELE) con más énfasis en el desarrollo de las capacidades de la oída y la oratoria. Por eso el desarrollo a través por los niveles de DELE puede ser más lento que el normal.</p>
+
+        <h3>Asuntos generales</h3>
+
+        <h4>Art. 3 – La hora</h4>
+        <p>La profesora no necesita prolongarse más allá de la hora programada una clase para complacer los estudiantes que llegan tarde. Todas las clases empezarán y terminarán a tiempo.</p>
+
+        <h4>Art. 4 – El ubicación</h4>
+        <p>Las ubicaciones de clase normalmente son restaurantes y cafés así que los estudiantes pueden comer durante de la clase. Si es necesario, los estudiantes pueden tener que ayudar para encontrar unos lugares nuevos más adecuados. Las ubicaciones deben estar bien comunicado, disponibles y propicio para hacer clases.</p>
+        <p>La ubicación de clase puede cambiar cada semana para evitar a molestar la gestión normal del restaurante o café, aunque solerán estar en Millenia Walk. Además se recomienda que los estudiantes comprar la comida o la bebida del restaurante o café.</p>
+
+        <h4>Art. 5 – El pago</h4>
+        <p>Cada estudiante debe pagar la matricula entera antes del comienzo del curso.</p>
+
+        <h4>Art. 6 – Estudiantes nuevos</h4>
+        <p>La decisión para añadir estudiantes nuevos al curso en cualquier momento es dejado al criterio de la profesora siempre que la funcionamiento de las clases no es cambiado considerablemente. El tamaño máximo del curso es siete estudiantes aunque el tamaño cómodo es cuatro a seis estudiantes normalmente.</p>
+
+        <h3>Los materiales</h3>
+
+        <h4>Art. 7 – Materiales y libros</h4>
+        <p>La profesora no se espera suministrar materiales impresos como libros escolares, libros de ejercicio o fotocopias. Si las notas son necesarios, copias transitorias, fotocopias o fotógrafos son aceptables como notas. </p>
+        <p>Si libros escolares o libros de ejercicio deben ser a utilizar para el aprendizaje, la profesora puede suministrar una copia de los materiales para hacer copias, recomienda una fuente para la compra o los compra para los estudiantes. Los estudiantes pagarán los costos adicionales.</p>
+
+        <h4>Art. 8 – Los fuentes del material</h4>
+        <p>Cualquier fuente de material didáctico, notas y ejercicios se puede utilizar o se pueden crear independientemente.</p>
+
+        <h3>Los deberes en casa</h3>
+
+        <h4>Art. 9 – Los deberes y la entrega</h4>
+        <p>Aunque los deberes no se consideran obligatorios, los estudiantes se animan que terminarlos en cualquier manera que es más cómodo para ellos.</p>
+        <p>Los deberes se pueden entregados por cargar en la carpeta de Dropbox compartida en el compartimento de la semana que fueron dados. Todos los deberes incluidos las tareas sin texto se pueden entregados in esta manera.</p>
+        <p>La fecha límite normal de los deberes es el fin de los sábados antes de la clase próxima. Si la entrega es perdida, los deberes se pueden entregados para corregir en el compartimento de Dropbox de la clase siguiente. </p>
+
+        <h4>Art. 10 – La corrección de los deberes</h4>
+        <p>Los deberes corregidos será dejados en lo mismo compartimento de Dropbox que fueron entregados. </p>
+        <p>La solución de los deberes de elección múltiple será dada en lugar de correcciones con señales.</p>
+
+        <h4>Art. 11 – Correcciones y preguntas</h4>
+        <p>Es la responsabilidad de los estudiantes revisar y entender sus deberes afuera de clase. Se recomienda que los estudiantes intentan hacer sus correcciones antes de encontrar la solución.</p>
+        <p>Si hay errores notables por los estudiantes, la profesora se puede elegir a discutirlos o explicarlos durante de las clases siguientes. Si no, los estudiantes pueden cargar en el compartimento de Dropbox de la semana siguiente las preguntas que tienen.</p>
+
+        <h3>El horario</h3>
+
+        <h4>Art. 12 – Las clases que se faltó</h4>
+        <p>Los estudiantes que han faltado unas clases pueden unirse a una clase de reparación después de las diez clases ordinarias han terminado. Esta clase única intentará repasar los materiales más importantes de las clases que se faltaron.</p>
+        <p>Si no hay estudiantes que han faltado clase o nadie elijó pasar la clase de reparación, entonces no la se hará.</p>
+
+        <h4>Art. 13 – Los descansos de las clases</h4>
+        <p>Las clases se esperan ocurrir cada semana sin descansos entre las clases a menos que la profesora y todos los estudiantes han acordado. No habrá más de dos descansos entre la primera clase y el final.</p>
+        <p>Los descansos largos para el fin del año o las fiestas mayores se acuerdan un mes de antemano por todos los estudiantes y la profesora.</p>
+
+      </div><!--/#main-content-->
+    </div><!--/.container-fluid-->
+      
+    <!-- FOOTER SECTION -->
+    <!--........................................................................................-->
+    <footer class="panel-footer">
+      <div class="container">
+        
+        <!-- ===== Footer Navbar ===== -->
+        <div id="navbar-footer" class="pull-right">
+          <ul class="nav nav-pills">
+            <li class="visible-xs">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span>
+                <br> 
+                Inicio
+              </a>
+            </li>
+            <li class="visible-xs">
+              <a href="sobre.html">
+                <span class="glyphicon glyphicon-info-sign"></span>
+                <br> 
+                Sobre <br> nosotros
+              </a>
+            </li>
+          </ul>
+        </div><!--/#navbar-footer -->
+
+        <!-- ===== Footer Copyright ===== -->
+        <div id ="footer-copyright" class="text-center">
+          Copyright &copy; Kopi Calentito 2017
+        </div>
+
+      </div><!--/.container-->
+    </footer><!--/.panel-footer-->
+
+    <script src="js/pw.js"></script>
+  </body>
+</html>
