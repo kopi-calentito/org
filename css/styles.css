@@ -1,0 +1,432 @@
+body {
+  color: #000;
+  background-color: #fff;
+  font-family: "Open+Sans", sans-serif;
+}
+h2 {
+  font-size: 3.5em;
+  text-align: center;
+  font-family: 'Boogaloo', cursive;
+}
+h3 {
+  font-family: 'Boogaloo', cursive;
+  font-size: 2.3em;
+  border-bottom: 1px solid #000; 
+}
+h4 {
+  font-weight: bold;
+}
+.pw-a {
+  cursor: pointer; 
+  cursor: hand;
+}
+
+/*=====================================================================================|
+|************************************** 1. HEADER *************************************|
+|======================================================================================|*/
+#header-nav {
+  background-color: #fff;
+  border-radius: 0;
+  border: 0;
+  box-shadow: 0 0 20px #3F0C1F;
+  margin-bottom: 0;
+}
+#logo-img {
+  background: url("../images/logo.png") no-repeat;
+  width: 60px; /* This is supposed to be more large screen >1200px but my desktop screen is smaller than that so I cannot do the manual sizing now */
+  height: 100px; /* This is supposed to be more large screen >1200px but my desktop screen is smaller than that so I cannot do the manual sizing now */
+  background-size: contain;
+  margin: 10px 15px 10px 0;
+}
+.navbar-brand h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #61122f;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 28px;
+  margin-bottom: 0;
+  line-height: .75;
+  font-family: "Atma", cursive;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+/* END Header */
+
+/************************************* 1.1 Navbar **************************************
+========================================================================================*/
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span { /* Glyphs */
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END Navbar */
+
+/*=====================================================================================|
+|********************************** 2. MAIN-CONTENT ***********************************|
+|======================================================================================|*/
+.container-fluid {
+  padding: 0;
+}
+#main-content {
+  padding-bottom: 30px;
+}
+/* END Main-content */
+
+/*********************************** 2.1 Jumbotron *************************************
+========================================================================================*/
+.container-fluid .jumbotron {
+  margin-top: 20px;
+}
+#main-content #calendar {
+  width: 70vw;
+}
+/* END Jumbotron */
+
+/*********************************** 2.2 Home-Tiles ************************************
+========================================================================================*/
+#home-tiles {
+  height: 150vh;
+  background-color: #660000;
+  padding-top: 20px;
+}
+#home-tiles a {
+  color: #f2f2f2;
+  text-align: left;
+  padding: 10px;
+  font-size: 1.1em;
+}
+#home-tiles a:hover {
+  background: #E7E7E7;
+  color: #951c49;
+}
+#home-tiles a span { /* Glyphs */
+  font-size: 1.8em;
+  text-align: right;
+}
+#home-tiles hr {
+  margin: 0px;
+}
+#home-tiles div {
+  margin: 0;
+  padding: 0;
+}
+/* END Home-tiles */
+
+/************************************* 2.3 Footer **************************************
+========================================================================================*/
+.panel-footer {
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+  color: #fff;
+}
+/* END Footer */
+
+/********************************** 2.4 Book-tiles *************************************
+========================================================================================*/
+.book-tile {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 15px; /* for line spacing when the tiles stack when the screen gets smaller */
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+.book-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#libroA01 {
+  background: url("../images/libroA01.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.book-tile span {
+  position: absolute;
+  bottom: 0; /* absolute position in containing div */
+  right: 0; /* absolute position in containing div */
+  width: 100%; 
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  opacity: .8; 
+}
+#libroA02 {
+  background: url("../images/libroA02.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+} 
+#libroB01 {
+  background: url("../images/libroB01.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#libroB02 {
+  background: url("../images/libroB02.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#libroB03 {
+  background: url("../images/libroB03.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#libroB04 {
+  background: url("../images/libroB04.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#libroB05 {
+  background: url("../images/libroB05.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#examenA1a {
+  background: url("../images/examenA1a.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#examenA1b {
+  background: url("../images/examenA1b.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#examenA1c {
+  background: url("../images/examenA1c.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#examenA2a {
+  background: url("../images/examenA2a.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#examenA2b {
+  background: url("../images/examenA2b.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#examenA2c {
+  background: url("../images/examenA2c.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+/* END Book-tiles */
+
+/*********************************** 2.5 Articles **************************************
+========================================================================================*/
+.media-list {
+  margin: auto 15px;
+}
+.media-object {
+  height: 90px;
+}
+.media-body {
+  vertical-align: middle;
+}
+.media {
+  margin-bottom: 15px;
+}
+/* END Articles */
+
+/*********************************** 2.6 Page-navbar *************************************
+========================================================================================*/
+#page-navbar {
+  margin: auto 20px;
+}
+#page-navbar li a {
+  /*border: 1px solid #231231;*/
+  color: #3F0C1F;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 10px;
+}
+#page-navbar .active a {
+  background-color: #660000;
+  color: #f2f2f2;
+}
+/* END Page-navbar */
+
+/*=====================================================================================|
+|******************************* 3. SIZE DEPENDENT STYLES *****************************|
+|======================================================================================|*/
+
+/***************************** 3.1 Large devices only **********************************
+========================================================================================*/
+@media (min-width: 1200px) {
+
+  /** Jumbotron *****************************************************/
+  .container-fluid .jumbotron {
+    background: url("../images/jumbotron.jpg") no-repeat;
+    background-size: contain; /* Cannot be put outside of these size dependent blocks for now because the above background tag will over-write it. */
+    background-position: center;
+    /*height: 675px;*/
+    height: 562px; /* 10/12 fraction size */
+  }
+  /* END Jumbotron */
+
+  /** Home-tiles *****************************************************/
+  #home-tiles a {
+    font-size: 1.3em;
+  }
+  /* END Home-tiles */
+}
+
+/***************************** 3.2 Medium devices only *********************************
+========================================================================================*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  /** Main-content *****************************************************/
+  .container-fluid .jumbotron {
+    background: url("../images/jumbotron.jpg") no-repeat;
+    background-size: contain; /* Cannot be put outside of these size dependent blocks for now because the above background tag will over-write it. */
+    background-position: center;
+    /*height: 558px;*/
+    height: 465px; /* 10/12 fraction size */
+  }
+  /* END Main-content */
+
+  /** Home-tiles *****************************************************/
+  #home-tiles a {
+    font-size: 1.2em;
+  }
+  /* END Home-tiles */
+}
+
+/***************************** 3.3 Small devices only **********************************
+========================================================================================*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /** Main-content *****************************************************/
+  .container-fluid .jumbotron {
+    background: url("../images/jumbotron.jpg") no-repeat;
+    background-size: contain; /* Cannot be put outside of these size dependent blocks for now because the above background tag will over-write it. */
+    background-position: center;
+    /*height: 432px;*/
+    height: 324px; /* 9/12 fraction size */
+  }
+  /* END Main-content */
+}
+
+/************************** 3.4 Extra-small devices only *******************************
+========================================================================================*/
+@media (max-width: 767px) {
+  
+  /** Header *****************************************************/
+  .navbar-brand {
+    padding-top: 6px;
+    height: 110px; /*80px;*/
+  }
+  .navbar-brand h1 {
+    margin: 25px auto 5px;
+    padding-top: 8px;
+  }
+  .navbar-header button.navbar-toggle {
+    margin-top: -70px;
+  }
+  #logo-img {
+    margin: 10px 2px 10px 20px;
+    /*height: 15vh;*/
+    height: 80px;
+  }
+  #collapsable-nav a { /* Collapsed nav menu glyphs and words */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav glyphs */
+    font-size: 1.2em; /* To override 1.8em sizing of larger screen sizes */
+    margin-right: 5px;
+  }
+  /* END Header */
+
+  /** Main-content *****************************************************/
+  .container-fluid .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+  #main-content #calendar {
+    width: 90vw;
+  }
+  /* END Main-content */
+
+  /** Footer *****************************************************/
+  .panel-footer {
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px 10px 15px;
+  }
+  #navbar-footer a {
+    padding: 5px;
+    font-size: .7em;
+    color: #fff;
+  }
+  #navbar-footer a span {
+    font-size: 1.8em;
+  }
+  #footer-copyright {
+    text-align: left;
+    padding-top: 18px;
+  }
+  /* END Footer */
+}
+
+/********************* 3.4 Super-small devices only (like iPhone 4) ********************
+========================================================================================*/
+@media (max-width: 479px) {
+
+  h2 {
+    font-size: 2em;
+  }
+
+  /** Header *****************************************************/
+  .navbar-brand {
+    height: 5vh; /*80px;*/
+    width: 70vw;
+    padding-left: 0px;
+  }
+  .navbar-brand h1 {
+    font-size: 8vw;
+    margin-top: 15px;
+    margin: 5px;
+    padding-top: 17px;
+  }
+  #logo-img {
+    margin: 5px;
+    width: 12vw;
+    height: 10vh;
+  }
+  .navbar-header button.navbar-toggle {
+    margin-top: -50px;
+  }
+  /* END Header */
+  
+  /** Footer *****************************************************/
+  #footer-copyright {
+    font-size: 3vw;
+    padding-top: 15px;
+  }
+  #navbar-footer a {
+    font-size: 2.2vw;
+  }
+  #navbar-footer a span {
+    font-size: 1.5em;
+  }
+  /* END Footer */
+
+}
+

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kopi Calentito</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Atma|Boogaloo|Carter+One|Kavoon|Open+Sans|Oregano|Passion+One|Rakkas" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <!--==============================================================================================-->
+    <!-- HEADER SECTION -->
+    <!--==============================================================================================-->
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+
+          <!-- NAVBAR -->
+          <!--........................................................................................-->
+          <div class="navbar-header">
+
+            <!-- ===== Logo ===== -->
+            <a href="index.html" class="pull-left">
+              <div id="logo-img" alt="Logo"></div>
+            </a>
+
+            <!-- ===== Brand ===== -->
+            <div class="navbar-brand">
+              <a href="index.html">
+                <h1>Kopi Calentito</h1>
+              </a>
+            </div><!--/navbar-brand-->
+            
+            <!-- ===== Collapsable Navigator ===== -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span> <!--The navigator's 3 stripes-->
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          
+          </div><!--/.navbar-header-->
+
+          <!-- NAVBAR CONTENTS -->
+          <!--........................................................................................-->
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+
+              <li class="hidden-xs">
+                <a href="index.html">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <br class="hidden-xs">
+                  Inicio
+                </a>
+              </li>
+              <li class="hidden-xs">
+                <a href="sobre.html">
+                  <span class="glyphicon glyphicon-info-sign"></span>
+                  <br class="hidden-xs">
+                  Sobre <br class="hidden-xs"> nosotros
+                </a>
+              </li>
+
+              <li class="visible-xs">
+                <a href="horarios.html">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                  <br class="hidden-xs">
+                  Horarios
+                </a>
+              </li>
+              <li class="visible-xs">
+                <a class="pw-a" onclick="pw_deberes()">
+                  <span class="glyphicon glyphicon-pencil"></span>
+                  <br class="hidden-xs">
+                  Deberes
+                </a>
+              </li>
+              <li class="visible-xs">
+                <a class="pw-a" onclick="pw_curso()">
+                  <span class="glyphicon glyphicon-book"></span>
+                  <br class="hidden-xs">
+                  Materiales de curso
+                </a>
+              </li>
+              <li class="visible-xs">
+                <a href="otros.html">
+                  <span class="glyphicon glyphicon-duplicate"></span>
+                  <br class="hidden-xs">
+                  Otros materiales
+                </a>
+              </li>
+              <li class="visible-xs">
+                <a href="examenes.html">
+                  <span class="glyphicon glyphicon-education"></span>
+                  <br class="hidden-xs">
+                  Examenes de DELE
+                </a>
+              </li>
+              <li class="visible-xs">
+                <a href="contratos.html">
+                  <span class="glyphicon glyphicon-check"></span>
+                  <br class="hidden-xs">
+                  Contratos
+                </a>
+              </li>
+
+            </ul><!--/#nav-list-->
+          </div><!--/.navbar-collapse-->
+
+        </div><!--/.container-->
+      </nav><!--/#header-nav-->
+    </header><!--/HEADER SECTION-->
+
+    <!--==============================================================================================-->
+    <!-- BULK SECTION -->
+    <!--==============================================================================================-->
+    <div class="container-fluid">
+      
+      <!-- HOME-TILES -->
+      <!--........................................................................................-->
+      <aside id="home-tiles" class="hidden-xs col-sm-3 col-md-3 col-lg-3">
+        <ul class="nav nav-pills nav-stacked">
+          
+          <li role="presentation">
+            <a href="horarios.html">
+              <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">Horarios</div>
+              </div>
+            </a>
+          </li>
+          <hr>
+          <li role="presentation">
+            <a class="pw-a" onclick="pw_deberes()">
+              <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <span class="glyphicon glyphicon-pencil"></span>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">Deberes</div>
+              </div>
+            </a>
+          </li>
+          <hr>
+          <li role="presentation">
+            <a class="pw-a" onclick="pw_curso()">
+              <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <span class="glyphicon glyphicon-book"></span>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">Materiales de curso</div>
+              </div>
+            </a>
+          </li>
+          <hr>
+          <li role="presentation">
+            <a href="otros.html">
+              <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <span class="glyphicon glyphicon-duplicate"></span>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">Otros materiales</div>
+              </div>
+            </a>
+          </li>
+          <hr>
+          <li role="presentation">
+            <a href="examenes.html">
+              <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <span class="glyphicon glyphicon-education"></span>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">Examenes de DELE</div>
+              </div>
+            </a>
+          </li>
+          <hr>
+          <li role="presentation">
+            <a href="contratos.html">
+              <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <span class="glyphicon glyphicon-check"></span>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">Contratos</div>
+              </div>
+            </a>
+          </li>
+          <hr>
+        </ul><!--/.nav-pills nav-stacked-->
+      </aside><!--/#home-tiles-->
+
+      <!-- MAIN-SECTION -->
+      <!--........................................................................................-->
+      <div id="main-content" class="col-sm-9 col-md-9 col-lg-9">
+
+        <h2>Otros Materiales</h2>
+
+        <!-- ===== Otros libros ===== -->
+        <ul id="page-navbar" class="nav nav-pills">
+          <li role="presentation"><a href="#"><span class="glyphicon glyphicon-arrow-up"></span></a></li>
+          <li role="presentation"><a href="#libros-niños">Libros para niños</a></li>
+          <li role="presentation"><a href="#otros-libros">Otros libros</a></li>
+          <li role="presentation"><a href="#articulos">Articulos interesantes</a></li>
+          <!--<li role="presentation"><a href="#michel-thomas">Michel Thomas</a></li>-->
+        </ul>
+
+        <h3 id="libros-niños">Libros para niños</h3>
+        <div class="row">
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+            <a class="pw-a" onclick="pw_nino01()">
+              <div id="libroB01" class="book-tile">
+                <span>¡Gol de Federico!</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+            <a class="pw-a" onclick="pw_nino02()">
+              <div id="libroB02" class="book-tile">
+                <span>Tairon el horrible</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+            <a class="pw-a" onclick="pw_nino03()">
+              <div id="libroB03" class="book-tile">
+                <span>Tairon el super tramposo</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+            <a class="pw-a" onclick="pw_nino04()">
+              <div id="libroB04" class="book-tile">
+                <span>Tairon en puros</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+            <a class="pw-a" onclick="pw_nino05()">
+              <div id="libroB05" class="book-tile">
+                <span>¡Que desastre!</span>
+              </div>
+            </a>
+          </div>
+        </div><!--/.row-->
+        <ul id="page-navbar" class="nav nav-pills pull-right">
+          <li role="presentation"><a href="#"><span class="glyphicon glyphicon-arrow-up"></span></a></li>
+        </ul>
+        
+        <h3 id="otros-libros">Otros libros</h3>
+        <div class="row">
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+            <a class="pw-a" onclick="pw_otro01()">
+              <div id="libroA01" class="book-tile">
+                <span>Spanish Verbs and Essentials of Grammar</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+            <a class="pw-a" onclick="pw_otro02()">
+              <div id="libroA02" class="book-tile">
+                <span>Spanish Word Games For Dummies 2010</span>
+              </div>
+            </a>
+          </div>
+        </div><!--/.row-->
+        <ul id="page-navbar" class="nav nav-pills pull-right">
+          <li role="presentation"><a href="#"><span class="glyphicon glyphicon-arrow-up"></span></a></li>
+        </ul>
+
+        <!-- ===== Articulos Interesantes ===== -->
+        <h3 id="articulos">Articulos Interesantes</h3>
+        <div class="row">
+          <ul class="media-list">
+            <li class="media">
+              <div class="media-left">
+                <a target="_blank" href="https://www.babble.com/latina/10-spanish-phrases-to-motivate-and-praise-your-child/">
+                  <img class="media-object" src="https://a.dilcdn.com/bl/wp-content/uploads/sites/8/2013/05/10-spanish-phrases-to-motivate-and-praise.jpg" alt="10 Spanish phrases to motivate and praise your child">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">10 Spanish phrases to motivate and praise your child</h4>
+                <!--description text-->
+              </div>
+            </li>
+            <li class="media">
+              <div class="media-left">
+                <a target="_blank" href="https://www.youtube.com/watch?v=0zQZY-l-3ig&list=PLS0Z_G7-cH5S5ekAL8aK7UbbAjxRqnHgX&index=2">
+                  <img class="media-object" src="images/llevarvstraer.jpg" alt="Similarities and Differences between the Spanish Verbs Llevar and Traer">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <span class="glyphicon glyphicon-film"></span>
+                  Similarities and Differences between the Spanish Verbs Llevar and Traer
+                </h4>
+                <!--description text-->
+              </div>
+            </li>
+            <li class="media">
+              <div class="media-left">
+                <a target="_blank" href="http://www.upworthy.com/15-encouraging-phrases-a-spanish-speaker-like-me-would-love-for-you-to-learn">
+                  <img class="media-object" src="http://i.upworthy.com/nugget/57bf212eba184100310000a5/attachments/04-span-a2166e204b666ddcf4157fb733dd8092.jpg" alt="15 encouraging phrases a Spanish speaker like me would love for you to learn">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">15 encouraging phrases a Spanish speaker like me would love for you to learn</h4>
+                <!--description text-->
+              </div>
+            </li>
+            <li class="media">
+              <div class="media-left">
+                <a target="_blank" href="https://www.youtube.com/watch?v=J7vreUPCl9c">
+                  <img class="media-object" src="https://i.ytimg.com/vi/J7vreUPCl9c/hqdefault.jpg?custom=true&w=336&h=188&stc=true&jpg444=true&jpgq=90&sp=68&sigh=rtJcJTO8D7KcDAmXPXX43BnMtpM" alt="How Spanish got its ñ - the story behind that 'n with a tilde'">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <span class="glyphicon glyphicon-film"></span>
+                  How Spanish got its ñ
+                </h4>
+                La historia de la 'n con la tilde'
+              </div>
+            </li>
+            <li class="media">
+              <div class="media-left">
+                <a target="_blank" href="http://www.wildjunket.com/top-10-spanish-swear-words/">
+                  <img class="media-object" src="http://www.wildjunket.com/wp-content/uploads/2009/03/image-thumb5.png" alt="Top 10 Spanish swear words">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Top 10 Spanish swear words</h4>
+                <!--description text-->
+              </div>
+            </li>
+            <li class="media">
+              <div class="media-left">
+                <a target="_blank" href="http://www.donquijote.org/spanishlanguage/games/">
+                  <img class="media-object" src="http://static.donquijote.org/images/spanish-language/games/hangman.gif" alt="Spanish word games">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Spanish word games</h4>
+                <!--description text-->
+              </div>
+            </li>
+            <li class="media">
+              <div class="media-left">
+                <a target="_blank" href="http://campus.difusion.com/">
+                  <img class="media-object" src="https://www.difusion.com/uploads/imagenes/paginas/campus/campus-difusion-2.png" alt="Campus Difusión">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Campus Difusión</h4>
+                Una página web para enseñar y aprender español con actividades interactivas, libros digitales y otras cosas.
+              </div>
+            </li>
+            <li class="media">
+              <div class="media-left">
+                <a target="_blank" href="http://www.spanishdict.com/guide/false-cognates/">
+                  <img class="media-object" src="https://lh3.googleusercontent.com/Q854580UU3BWnyw5INPaSXpdiAP-ocMNl_3XwIngGPzS8AUhAbTLh_cS3g4EyaCgRTJ4=w300" alt="False Cognates">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">False Cognates</h4>
+              </div>
+            </li>
+            <li class="media">
+              <div class="media-left">
+                <a target="_blank" href="http://www.spanishdict.com/blog/5-steps-to-understanding-por-vs-para/">
+                  <img class="media-object" src="https://d186wpps44egzl.cloudfront.net/2015/08/por-para__1439579282_50-201-70-94.jpg" alt="5 Steps To Understanding Por vs. Para">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">5 Steps To Understanding Por vs. Para</h4>
+              </div>
+            </li>
+            <li class="media">
+              <div class="media-left">
+                <a target="_blank" href="http://www.profedeele.es/vocabulario/tiempo-atmosferico/">
+                  <img class="media-object" src="http://www.profedeele.es/wp-content/uploads/h5p/content/106/images/file-56d5fb4c6ab74.jpg" alt="Vocabulario del clima y tiempo atmosférico">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Vocabulario del clima y tiempo atmosférico</h4>
+              </div>
+            </li>
+            <li class="media">
+              <div class="media-left">
+                <a target="_blank" href="http://www.profedeele.es/video/el-amor-mola-san-valentin/">
+                  <img class="media-object" src="http://www.profedeele.es/wp-content/uploads/2016/10/elamormola.jpg" alt="El amor mola» Historias de San Valentín">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">El amor mola» Historias de San Valentín</h4>
+                'El amor mola' es el título de una serie de cinco microhistorias románticas que realizó Roberto Pérez Toledo en 2015 para el día de San Valentín, una fiesta para los enamorados que se celebra el 14 de febrero.
+              </div>
+            </li>
+          </ul><!--/.media-list-->
+        </div><!--/.row-->
+        <ul id="page-navbar" class="nav nav-pills pull-right">
+          <li role="presentation"><a href="#"><span class="glyphicon glyphicon-arrow-up"></span></a></li>
+        </ul>
+        
+        <!-- ===== Michel Thomas ===== -->
+        <!--
+        <h3 id="michel-thomas">Michel Thomas' Spanish Language Builder</h3>
+        <div class="row">
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B0Fj_dHOgKn4X1RHaHVBb1AwT1k#list" style="width:96%; height:200px; border:1; margin:15px;"></iframe>
+        </div>--><!--/.row-->
+        <!--<ul id="page-navbar" class="nav nav-pills pull-right">
+          <li role="presentation"><a href="#"><span class="glyphicon glyphicon-arrow-up"></span></a></li>
+        </ul>
+        -->
+
+      </div><!--/#main-content-->
+    </div><!--/.container-fluid-->
+      
+    <!-- FOOTER SECTION -->
+    <!--........................................................................................-->
+    <footer class="panel-footer">
+      <div class="container">
+        
+        <!-- ===== Footer Navbar ===== -->
+        <div id="navbar-footer" class="pull-right">
+          <ul class="nav nav-pills">
+            <li class="visible-xs">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span>
+                <br> 
+                Inicio
+              </a>
+            </li>
+            <li class="visible-xs">
+              <a href="sobre.html">
+                <span class="glyphicon glyphicon-info-sign"></span>
+                <br> 
+                Sobre <br> nosotros
+              </a>
+            </li>
+          </ul>
+        </div><!--/#navbar-footer -->
+
+        <!-- ===== Footer Copyright ===== -->
+        <div id ="footer-copyright" class="text-center">
+          Copyright &copy; Kopi Calentito 2017
+        </div>
+
+      </div><!--/.container-->
+    </footer><!--/.panel-footer-->
+
+    <script src="js/pw.js"></script>
+  </body>
+</html>

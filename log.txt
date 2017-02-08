@@ -1,0 +1,56 @@
+DRAFT 11 - 2017 Feb 08
+===================================================================================================
+* Added more articles to otros.html.
+* Changed the directory to the organisation Kopi-Calentito's org repository.
+
+DRAFT 10 - 2017 Jan 31
+===================================================================================================
+* Added content for contratos.html.
+* Styled h4 tags.
+* Converted several anchor tags to use a simple password system. 
+  - Used pw.js to perform this.
+  - Added pointer styling for these pw-a tags because for some reason the hand pointer disappeared when hovering.
+* Also blocked off Michel Thomas section on otros.html for now.
+
+DRAFT 9 - 2017 Jan 31
+===================================================================================================
+* Added curso.html for the Materiales de Curso page.
+* Added contratos.html for the Contratos page.
+* Added Articulos Interesantes and Michel Thomas for the Otros Materiales page.
+* Added page navbar for the Otros Materiales page.
+* Changed side navbar from div tag to aside tag.
+* Considered changing sectioning from div.row to section tags but there was some float behaviour so this was abandoned for now.
+* Styled h2 and h3 tags.
+
+DRAFT 8 - 2017 Jan 30
+===================================================================================================
+* Replaced bootstrap link references from a local desktop copy to the global online copy.
+  - Added the JS and jQuery links as well.
+  - Somehow this made everything work, including the old toggle navbar and glyphicons.
+* Souped up the old navbars.
+* Completed the otros.html, examenes.html, sobre.html, deberes link to dropbox and horarios.html.
+* Uploaded successfully to Github.
+  - Note that file extensions are case sensitive.
+
+DRAFT 7 - 2017 Jan 22
+===================================================================================================
+* Made nav-pills for xs size successfully but they did not look nice.
+* To make a normal navbar instead.
+
+DRAFT 6 - 2017 Jan 22
+===================================================================================================
+* Attempted to combine larger than xs and xs or smaller navbars but failed. 
+  - Unable to switch between nav-stacked and plain nav or to identify the CSS coding to manipulate.
+* To revert back to Draft 5.
+
+DRAFT 5 - 2017 Jan 21
+===================================================================================================
+* Made a work-around on the nav-bar issue by creating another set of nav-pills that appear only when xs or smaller.
+  - May have something wrong with the hover function for these new nav-pills though.
+
+DRAFT 4 - 2017 Jan 19
+===================================================================================================
+* Completed first full draft on desktop.
+* Uploaded to Github with minor modifications.
+  - But navbar-toggle did not work when in xs mode.
+  - Neither did the Bootstrap glyphicons. Could not figure out how to fix this.
