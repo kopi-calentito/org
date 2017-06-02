@@ -1,7 +1,19 @@
-DRAFT 11 - 2017 Feb 08
+---- Date of drafts/versions added only after upload to Github ----
+
+DRAFT 12 - 2017 Jun 01
+===================================================================================================
+* Modified format of otros.html.
+* Moved content of contratos.html to curso.html.
+  - Deleted contratos.html.
+  - Modified navigation bars of all pages to remove contratos.html.
+* Corrected language on sobre.html and added an iframe of location.
+
+DRAFT 11 - 2017 Feb 24
 ===================================================================================================
 * Added more articles to otros.html.
 * Changed the directory to the organisation Kopi-Calentito's org repository.
+* Split the Otros page to Audios y Peliculas and Libros y Articulos.
+  - Updated the pw.js with the password function for pelis.html
 
 DRAFT 10 - 2017 Jan 31
 ===================================================================================================

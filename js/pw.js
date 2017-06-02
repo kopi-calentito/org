@@ -13,6 +13,12 @@ function pw_curso() {
     window.location = "https://lim-hanbin.github.io/kopicalentito/curso.html";
   }
 }
+function pw_peliculas() {
+  var nombre = prompt("¡Contraseña! ¿Qué es el nombre de su profesor?", "");
+  if (nombre == "Marisa" || nombre == "marisa") {
+    window.location = "https://lim-hanbin.github.io/kopicalentito/pelis.html";
+  }
+}
 
 // ----------------------------------------------------------------------------------
 // |                              Libros para niños                                 |
