@@ -136,9 +136,9 @@ h4 {
   background-color: #222;
   border-top: 0;
   color: #fff;
-  position:absolute;
+  /*position:absolute;*/
   width:100%;
-  bottom: 0;
+  /*bottom: 0;*/
   /*z-index: -1;*/
 }
 /* END Footer */
