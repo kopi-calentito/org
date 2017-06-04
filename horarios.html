@@ -55,67 +55,57 @@
           <div id="collapsable-nav" class="collapse navbar-collapse">
             <ul id="nav-list" class="nav navbar-nav navbar-right">
 
-              <li class="hidden-xs">
-                <a href="index.html">
+              <li class="dropdown">
+                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   <span class="glyphicon glyphicon-home"></span>
                   <br class="hidden-xs">
                   Inicio
                 </a>
               </li>
-              <li class="hidden-xs">
-                <a href="sobre.html">
+              <li class="dropdown">
+                <a href="sobre.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   <span class="glyphicon glyphicon-info-sign"></span>
                   <br class="hidden-xs">
                   Sobre <br class="hidden-xs"> nosotros
                 </a>
               </li>
-
-              <li class="visible-xs">
-                <a href="horarios.html">
+              <li class="dropdown">
+                <a href="horarios.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   <span class="glyphicon glyphicon-calendar"></span>
                   <br class="hidden-xs">
                   Horarios
                 </a>
               </li>
-              <li class="visible-xs">
-                <a class="pw-a" onclick="pw_deberes()">
-                  <span class="glyphicon glyphicon-pencil"></span>
+              <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="glyphicon glyphicon-folder-open"></span>
                   <br class="hidden-xs">
-                  Deberes
+                  Materiales
+                  <span class="caret"></span>
                 </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li role="presentation"><a onclick="pw_curso()" ><span class="glyphicon glyphicon-book"></span>Del curso</a></li>
+                  <li role="presentation"><a onclick="pw_deberes()"><span class="glyphicon glyphicon-pencil"></span>Deberes</a></li>
+                  <li role="presentation"><a href="out-hard.html"><span class="glyphicon glyphicon-list-alt"></span>Contratos</a></li>
+                  <li role="presentation" class="divider visible-xs"></li>
+                </ul>
               </li>
-              <li class="visible-xs">
-                <a class="pw-a" onclick="pw_curso()">
-                  <span class="glyphicon glyphicon-book"></span>
+              <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="glyphicon glyphicon-zoom-in"></span>
                   <br class="hidden-xs">
-                  Materiales de curso
+                  Otros
+                  <span class="caret"></span>
                 </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li role="presentation"><a href="otros.html"><span class="glyphicon glyphicon-book"></span>Libros y Artículos</a></li>
+                  <li role="presentation"><a onclick="pw_peliculas()"><span class="glyphicon glyphicon-film"></span>Audios y Películas</a></li>
+                  <li role="presentation"><a href="examenes.html"><span class="glyphicon glyphicon-education"></span>Examenes de DELE</a></li>
+                  <li role="presentation" class="divider visible-xs"></li>
+                </ul>
               </li>
-              <li class="visible-xs">
-                <a class="pw-a" onclick="pw_peliculas()">
-                  <span class="glyphicon glyphicon-duplicate"></span>
-                  <br class="hidden-xs">
-                  Audios y Películas
-                </a>
-              </li>
-              <li class="visible-xs">
-                <a href="otros.html">
-                  <span class="glyphicon glyphicon-duplicate"></span>
-                  <br class="hidden-xs">
-                  Libros y Artículos
-                </a>
-              </li>
-              <li class="visible-xs">
-                <a href="examenes.html">
-                  <span class="glyphicon glyphicon-education"></span>
-                  <br class="hidden-xs">
-                  Examenes de DELE
-                </a>
-              </li>
-
             </ul><!--/#nav-list-->
           </div><!--/.navbar-collapse-->
-
         </div><!--/.container-->
       </nav><!--/#header-nav-->
     </header><!--/HEADER SECTION-->
@@ -123,85 +113,11 @@
     <!--==============================================================================================-->
     <!-- BULK SECTION -->
     <!--==============================================================================================-->
-    <div class="container-fluid">
+    <div class="container">
       
-      <!-- HOME-TILES -->
-      <!--........................................................................................-->
-      <aside id="home-tiles" class="hidden-xs col-sm-3 col-md-3 col-lg-3">
-        <ul class="nav nav-pills nav-stacked">
-          
-          <li role="presentation">
-            <a href="horarios.html">
-              <div class="row">
-                <div class="col-sm-3 col-md-3 col-lg-3">
-                  <span class="glyphicon glyphicon-calendar"></span>
-                </div>
-                <div class="col-sm-9 col-md-9 col-lg-9">Horarios</div>
-              </div>
-            </a>
-          </li>
-          <hr>
-          <li role="presentation">
-            <a class="pw-a" onclick="pw_deberes()">
-              <div class="row">
-                <div class="col-sm-3 col-md-3 col-lg-3">
-                  <span class="glyphicon glyphicon-pencil"></span>
-                </div>
-                <div class="col-sm-9 col-md-9 col-lg-9">Deberes</div>
-              </div>
-            </a>
-          </li>
-          <hr>
-          <li role="presentation">
-            <a class="pw-a" onclick="pw_curso()">
-              <div class="row">
-                <div class="col-sm-3 col-md-3 col-lg-3">
-                  <span class="glyphicon glyphicon-book"></span>
-                </div>
-                <div class="col-sm-9 col-md-9 col-lg-9">Materiales de curso</div>
-              </div>
-            </a>
-          </li>
-          <hr>
-          <li role="presentation">
-            <a class="pw-a" onclick="pw_peliculas()">
-              <div class="row">
-                <div class="col-sm-3 col-md-3 col-lg-3">
-                  <span class="glyphicon glyphicon-duplicate"></span>
-                </div>
-                <div class="col-sm-9 col-md-9 col-lg-9">Audios y Películas</div>
-              </div>
-            </a>
-          </li>
-          <hr>
-          <li role="presentation">
-            <a href="otros.html">
-              <div class="row">
-                <div class="col-sm-3 col-md-3 col-lg-3">
-                  <span class="glyphicon glyphicon-duplicate"></span>
-                </div>
-                <div class="col-sm-9 col-md-9 col-lg-9">Libros y Artículos</div>
-              </div>
-            </a>
-          </li>
-          <hr>
-          <li role="presentation">
-            <a href="examenes.html">
-              <div class="row">
-                <div class="col-sm-3 col-md-3 col-lg-3">
-                  <span class="glyphicon glyphicon-education"></span>
-                </div>
-                <div class="col-sm-9 col-md-9 col-lg-9">Examenes de DELE</div>
-              </div>
-            </a>
-          </li>
-          <hr>
-        </ul><!--/.nav-pills nav-stacked-->
-      </aside><!--/#home-tiles-->
-
       <!-- MAIN-SECTION -->
       <!--........................................................................................-->
-      <div id="main-content" class="col-sm-9 col-md-9 col-lg-9">
+      <div id="main-content">
 
         <!-- ===== Horarios ===== -->
         <h2>Horarios</h2>
@@ -210,7 +126,7 @@
         
       </div><!--/#main-content-->
 
-    </div><!--/.container-fluid-->
+    </div><!--/.container-->
       
     <!-- FOOTER SECTION -->
     <!--........................................................................................-->
