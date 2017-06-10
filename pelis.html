@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kopi Calentito</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Atma|Hammersmith+One|Open+Sans" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <!--==============================================================================================-->
+    <!-- HEADER SECTION -->
+    <!--==============================================================================================-->
+    <header>
+      <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+
+          <!-- NAVBAR -->
+          <!--........................................................................................-->
+          <div class="navbar-header">
+
+            <!-- ===== Logo ===== -->
+            <a href="index.html" class="pull-left">
+              <div id="logo-img" alt="Logo"></div>
+            </a>
+
+            <!-- ===== Brand ===== -->
+            <div class="navbar-brand">
+              <a href="index.html">
+                <h1>Kopi Calentito</h1>
+              </a>
+            </div><!--/navbar-brand-->
+            
+            <!-- ===== Collapsable Navigator ===== -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span> <!--The navigator's 3 stripes-->
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          
+          </div><!--/.navbar-header-->
+
+          <!-- NAVBAR CONTENTS -->
+          <!--........................................................................................-->
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+
+              <li class="dropdown">
+                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <br class="hidden-xs">
+                  Inicio
+                </a>
+              </li>
+              <li class="dropdown">
+                <a href="sobre.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="glyphicon glyphicon-info-sign"></span>
+                  <br class="hidden-xs">
+                  Sobre <br class="hidden-xs"> nosotros
+                </a>
+              </li>
+              <li class="dropdown">
+                <a href="horarios.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                  <br class="hidden-xs">
+                  Horarios
+                </a>
+              </li>
+              <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="glyphicon glyphicon-folder-open"></span>
+                  <br class="hidden-xs">
+                  Materiales
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li role="presentation"><a onclick="pw_curso()" ><span class="glyphicon glyphicon-book"></span>Del curso</a></li>
+                  <li role="presentation"><a onclick="pw_deberes()"><span class="glyphicon glyphicon-pencil"></span>Deberes</a></li>
+                  <li role="presentation" class="divider visible-xs"></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="glyphicon glyphicon-zoom-in"></span>
+                  <br class="hidden-xs">
+                  Otros
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li role="presentation"><a href="otros.html"><span class="glyphicon glyphicon-book"></span>Libros y Artículos</a></li>
+                  <li role="presentation"><a onclick="pw_peliculas()"><span class="glyphicon glyphicon-film"></span>Audios y Películas</a></li>
+                  <li role="presentation"><a href="examenes.html"><span class="glyphicon glyphicon-education"></span>Examenes de DELE</a></li>
+                  <li role="presentation" class="divider visible-xs"></li>
+                </ul>
+              </li>
+            </ul><!--/#nav-list-->
+          </div><!--/.navbar-collapse-->
+        </div><!--/.container-->
+      </nav><!--/#header-nav-->
+    </header><!--/HEADER SECTION-->
+
+    <!--==============================================================================================-->
+    <!-- BULK SECTION -->
+    <!--==============================================================================================-->
+    <div class="container">
+      
+      <!-- MAIN-SECTION -->
+      <!--........................................................................................-->
+      <div id="main-content">
+
+        <h2>Peliculas y Audios</h2>
+        
+        <!-- ===== Peliculas ===== -->
+        <h3 id="articulos">
+          <span class="glyphicon glyphicon-film"></span>
+          Peliculas
+        </h3>
+        <div class="row">
+          <ul class="media-list">
+
+            <li class="media">
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <a target="_blank" href="https://www.youtube.com/watch?v=K1WetL4QY_Q">
+                    El Pasajero (2008) - subtitulos en inglés
+                  </a>
+                </h4>
+                On New Year's Eve in Caracas, Venezuela, a desperate cab driver attempts to rob a wealthy passenger, but when the passenger offers to buy the driver's gun, it leads to a night neither of them will ever forget.
+              </div>
+              <div class="media-right">
+                <img class="media-object movie-pic" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNDU5ODMzNjM3Nl5BMl5BanBnXkFtZTgwNzY0MTc2NjE@._V1_UY268_CR9,0,182,268_AL_.jpg" alt="El Pasajero (2008)">
+              </div>
+            </li>
+            
+            <li class="media">
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <a target="_blank" href="https://www.youtube.com/watch?v=hO7Kf3ocJtw">
+                    Alivio (2015) - documentario - subtitulos en inglés
+                  </a>
+                </h4>
+                Three single mothers from different regions in Mexico attempt to heal painful memories of abuse through a shared profession they've fought very hard to achieve: Being nurses.
+              </div>
+              <div class="media-right">
+                <img class="media-object movie-pic" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjM5NDMwMDg0N15BMl5BanBnXkFtZTgwMjU2ODE3NTE@._V1_SY1000_CR0,0,646,1000_AL_.jpg" alt="Alivio (2015)">
+              </div>
+            </li>
+            
+            <li class="media">
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <a target="_blank" href="https://www.youtube.com/watch?v=UnlYyEEAAB0">
+                    Regresa (2010)
+                  </a>
+                </h4>
+                When her husband Ernesto throws himself into work and refuses to start a family, Maria begins to think he is having an affair and turns to hypnosis to help her understand her relationship. But when the therapist ends the session, she doesn't come back as herself. Instead, Maria is convinced she is a Basque princess from the 15th century, who is engaged to a prince from that time.
+              </div>
+              <div class="media-right">
+                <img class="media-object movie-pic" src="https://upload.wikimedia.org/wikipedia/en/f/f2/Regresa_%28film%29.jpg" alt="Regresa (2010)">
+              </div>
+            </li>
+            
+            <li class="media">
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <a target="_blank" href="https://www.youtube.com/watch?v=8cDICNXU2A4">
+                    A La Mala (2016) - sin subtitulos
+                  </a>
+                </h4>
+                When aspiring actress Maria Laura's best friend begs her to flirt with her boyfriend to test his fidelity, Maria finds a lucrative new career. After being hired by women across the city, Maria is given a gig that should be business as usual until she ends up falling head over heels for her latest mark.
+              </div>
+              <div class="media-right">
+                <img class="media-object movie-pic" src="http://static.tumblr.com/dd200df7e166a4f90a4ece309c06775d/lwnpxdx/I4tnknthg/tumblr_static_e5jelwnqr54okgoccg848okk0_2048_v2.jpg" alt="A La Mala (2016)">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <ul id="page-navbar" class="nav nav-pills pull-right">
+          <li role="presentation"><a href="#"><span class="glyphicon glyphicon-arrow-up"></span></a></li>
+        </ul>
+
+        <!-- ===== Peliculas ===== -->
+        <h3 id="articulos">
+          <span class="glyphicon glyphicon-blackboard"></span>
+          Dramas de television
+        </h3>
+        <div class="row">
+          <ul class="media-list">
+
+            <li class="media">
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <a target="_blank" href="https://www.youtube.com/watch?v=mcwp8_dhgCU">
+                    Extr@ en español - subtitulos en inglés y español
+                    <span class="glyphicon glyphicon-leaf"></span>
+                  </a>
+                </h4>
+                Lola and Ana share an apartment in Barcelona. Their lives are complicated with the arrival of a mystery guest, Sam from America. Pablo, who lives opposite the girls, finds out about Sam’s background – but tries to keep it a secret. Lola, Ana, Pablo and Sam play out their romances, life crises and contrasting interests. <a href="http://www.celebratelanguages.com/VIDSE01.html">[Vocabulario y preguntas]</a>
+              </div>
+              <div class="media-right">
+                <img class="media-object movie-pic" src="http://www.br.de/fernsehen/ard-alpha/sendungen/extra-en-espanol/extra-en-espanol-130~_v-img__16__9__m_-4423061158a17f4152aef84861ed0243214ae6e7.jpg?version=c7ec4" alt="Extra">
+              </div>
+            </li>
+            
+            <li class="media">
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <a target="_blank" href="https://www.youtube.com/watch?v=-JSgV4jSUJo">
+                    Lalola - subtitulos en inglés
+                    <span class="glyphicon glyphicon-fire"></span>
+                  </a>
+                </h4>
+                Lalo Padilla is a magazine editor and a womanizer who doesn't know what love means, he always underestimate women until his last girlfriend casted a spell on the night of an eclipse that changed his life forever. Lalo wakes up in the body of a beautiful woman not knowing what to do, how it happened or how to reverse it!
+              </div>
+              <div class="media-right">
+                <img class="media-object movie-pic" src="http://www.nina-tv.com/assets/data/imgs/vignettes/rdv/lalola330x170.jpg" alt="Lalola">
+              </div>
+            </li>
+            
+            <li class="media">
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <a target="_blank" href="http://www.bbc.co.uk/languages/spanish/mividaloca/">
+                    Mi vida loca (BBC)
+                    <span class="glyphicon glyphicon-leaf"></span>
+                  </a>
+                </h4>
+                Mi Vida Loca takes you on an intrigue mystery adventure to Madrid and beyond in 22 episodes, ca 10 min each, covering basic learning points for Spanish absolute beginners.
+              </div>
+              <div class="media-right">
+                <img class="media-object movie-pic" src="https://i.ytimg.com/vi/CfTdiizSEKw/hqdefault.jpg" alt="Mi vida loca">
+              </div>
+            </li>
+            
+            <li class="media">
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <a target="_blank" href="http://www.optimovision.com/capitulos/reina-corazones-capitulo-1-completo-hd/">
+                    Reina de Corazones
+                    <span class="glyphicon glyphicon-fire"></span>
+                  </a>
+                </h4>
+                A story of a love that must overcome the barrier of memory, where glamorous nightlife and casinos play a prominent role in a plot characterized by mysterious twists and turns, espionage, conspiracy, intrigue, crime, and romance.
+              </div>
+              <div class="media-right">
+                <img class="media-object movie-pic" src="http://www.telemundo.com/sites/nbcutelemundo/files/images/promo/tv_show/2014/10/20/10_reinadecorazones_1920x1080.jpg" alt="reina">
+              </div>
+            </li>
+            
+            <li class="media">
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <a target="_blank" href="http://www.lingus.tv/">
+                    Lingus TV
+                  </a>
+                </h4>
+                Free videos to boost your Spanish.
+              </div>
+              <div class="media-right">
+                <img class="media-object movie-pic" src="http://www.lingus.tv/lingustv2/wp-content/uploads/logo-lingus-2016-300x300.png" alt="lingus">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <ul id="page-navbar" class="nav nav-pills pull-right">
+          <li role="presentation"><a href="#"><span class="glyphicon glyphicon-arrow-up"></span></a></li>
+        </ul>
+        
+        <!-- ===== Michel Thomas ===== -->
+        <h3 id="michel-thomas">Michel Thomas' Spanish Language Builder</h3>
+        <div class="row">
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B0Fj_dHOgKn4X1RHaHVBb1AwT1k#list" style="width:96%; height:200px; border:1; margin:15px;"></iframe>
+        </div>--><!--/.row-->
+        <ul id="page-navbar" class="nav nav-pills pull-right">
+          <li role="presentation"><a href="#"><span class="glyphicon glyphicon-arrow-up"></span></a></li>
+        </ul>
+        
+      </div><!--/#main-content-->
+    </div><!--/.container-->
+      
+    <!-- FOOTER SECTION -->
+    <!--........................................................................................-->
+    <footer class="panel-footer">
+      <div class="container">
+        
+        <!-- ===== Footer Navbar ===== -->
+        <div id="navbar-footer" class="pull-right">
+          <ul class="nav nav-pills">
+            <li class="visible-xs">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span>
+                <br> 
+                Inicio
+              </a>
+            </li>
+            <li class="visible-xs">
+              <a href="sobre.html">
+                <span class="glyphicon glyphicon-info-sign"></span>
+                <br> 
+                Sobre <br> nosotros
+              </a>
+            </li>
+          </ul>
+        </div><!--/#navbar-footer -->
+
+        <!-- ===== Footer Copyright ===== -->
+        <div id ="footer-copyright" class="text-center">
+          Copyright &copy; Kopi Calentito 2017
+        </div>
+
+      </div><!--/.container-->
+    </footer><!--/.panel-footer-->
+
+    <script src="js/pw.js"></script>
+  </body>
+</html>

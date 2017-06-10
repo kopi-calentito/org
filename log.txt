@@ -1,8 +1,9 @@
 ---- Date of drafts/versions added only after upload to Github ----
 
-DRAFT 13 - 2017 Jun 05
+DRAFT 13 - 2017 Jun 11
 ===================================================================================================
 * Revamped the navigation bar.
+* Added the pelis.html of movies and audios.
 
 DRAFT 12 - 2017 Jun 01
 ===================================================================================================
