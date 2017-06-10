@@ -10,13 +10,14 @@ function pw_deberes() {
 function pw_curso() {
   var nombre = prompt("¡Contraseña! ¿Qué es el nombre de su profesor?", "");
   if (nombre == "Marisa" || nombre == "marisa") {
-    window.location = "https://lim-hanbin.github.io/kopicalentito/curso.html";
+    window.location = "https://kopi-calentito.github.io/org/curso.html";
   }
 }
 function pw_peliculas() {
   var nombre = prompt("¡Contraseña! ¿Qué es el nombre de su profesor?", "");
   if (nombre == "Marisa" || nombre == "marisa") {
-    window.location = "https://lim-hanbin.github.io/kopicalentito/pelis.html";
+    //window.location = "https://lim-hanbin.github.io/kopicalentito/pelis.html";//
+    window.location = "https://kopi-calentito.github.io/org/pelis.html";    
   }
 }
 
