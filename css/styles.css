@@ -4,13 +4,13 @@ body {
   font-family: "Open+Sans", sans-serif;
 }
 h2 {
-  font-family: 'Boogaloo', cursive;
-  font-size: 3.5em;
+  font-family: "Hammersmith One", cursive;
+  font-size: 3.2em;
   text-align: center;
 }
 h3 {
-  font-family: 'Boogaloo', cursive;
-  font-size: 2.3em;
+  font-family: "Hammersmith One", cursive;
+  font-size: 2.2em;
   border-bottom: 1px solid #000; 
 }
 h4 {
@@ -19,6 +19,9 @@ h4 {
 .pw-a {
   cursor: pointer; 
   cursor: hand;
+}
+#main-content {
+  margin-top: 130px;
 }
 
 /*=====================================================================================|
@@ -30,43 +33,56 @@ h4 {
   border: 0;
   box-shadow: 0 0 20px #3F0C1F;
   margin-bottom: 0;
+  width: 100%;
+  z-index: 1;
 }
 #logo-img {
   background: url("../images/logo.png") no-repeat;
-  width: 60px; /* This is supposed to be more large screen >1200px but my desktop screen is smaller than that so I cannot do the manual sizing now */
-  height: 100px; /* This is supposed to be more large screen >1200px but my desktop screen is smaller than that so I cannot do the manual sizing now */
+  width: 48px; /* This is supposed to be more large screen >1200px but my desktop screen is smaller than that so I cannot do the manual sizing now */
+  height: 80px; /* This is supposed to be more large screen >1200px but my desktop screen is smaller than that so I cannot do the manual sizing now */
   background-size: contain;
-  margin: 10px 15px 10px 0;
+  margin: 10px 15px 5px 0;
 }
 .navbar-brand h1 {
-  font-size: 3em;
+  font-size: 2.6em;
   font-weight: bold;
+  font-family: "Atma", cursive;
   color: #61122f;
   text-shadow: 1px 1px 1px #222;
-  margin-top: 28px;
-  margin-bottom: 0;
+  margin: 18px auto 0;
   line-height: .75;
-  font-family: "Atma", cursive;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
-/* END Header */
 
 /************************************* 1.1 Navbar **************************************
 ========================================================================================*/
 #nav-list {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 #nav-list a {
   color: #951C49;
   text-align: center;
+  padding: 8px 15px;
+  line-height: .9;
 }
 #nav-list a:hover {
   background: #E7E7E7;
 }
 #nav-list a span { /* Glyphs */
   font-size: 1.8em;
+}
+#nav-list li li a {
+  padding: 3px;
+  line-height: .9;
+}
+#nav-list li li a span {
+  font-size: 1em;
+  padding-right: 7px;
+}
+#collapsable-nav a span {
+  padding-bottom: 10px;
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #61122f;
@@ -75,18 +91,13 @@ h4 {
   clear: both;
   margin-top: -30px;
 }
-/* END Navbar */
 
 /*=====================================================================================|
 |********************************** 2. MAIN-CONTENT ***********************************|
 |======================================================================================|*/
-.container {
-  padding: 0;
-}
 #main-content {
   padding-bottom: 30px;
 }
-/* END Main-content */
 
 /*********************************** 2.1 Jumbotron *************************************
 ========================================================================================*/
@@ -96,7 +107,6 @@ h4 {
 #main-content #calendar {
   width: 70vw;
 }
-/* END Jumbotron */
 
 /*********************************** 2.2 Home-Tiles ************************************
 ========================================================================================*/
@@ -126,7 +136,6 @@ h4 {
   margin: 0;
   padding: 0;
 }
-/* END Home-tiles */
 
 /************************************* 2.3 Footer **************************************
 ========================================================================================*/
@@ -136,12 +145,8 @@ h4 {
   background-color: #222;
   border-top: 0;
   color: #fff;
-  /*position:absolute;*/
   width:100%;
-  /*bottom: 0;*/
-  /*z-index: -1;*/
 }
-/* END Footer */
 
 /********************************** 2.4 Book-tiles *************************************
 ========================================================================================*/
@@ -233,7 +238,6 @@ h4 {
   background-position: center;
   background-size: contain;
 }
-/* END Book-tiles */
 
 /*********************************** 2.5 Articles **************************************
 ========================================================================================*/
@@ -242,6 +246,9 @@ h4 {
 }
 .media-object {
   height: 40px;
+}
+.movie-pic {
+  height: 100px;
 }
 .media-body {
   vertical-align: middle;
@@ -267,7 +274,6 @@ h4 {
   background-color: #660000;
   color: #f2f2f2;
 }
-/* END Page-navbar */
 
 /*=====================================================================================|
 |******************************* 3. SIZE DEPENDENT STYLES *****************************|
@@ -291,7 +297,6 @@ h4 {
   #home-tiles a {
     font-size: 1.3em;
   }
-  /* END Home-tiles */
 }
 
 /***************************** 3.2 Medium devices only *********************************
@@ -306,13 +311,11 @@ h4 {
     /*height: 558px;*/
     height: 465px; /* 10/12 fraction size */
   }
-  /* END Main-content */
 
   /** Home-tiles *****************************************************/
   #home-tiles a {
     font-size: 1.2em;
   }
-  /* END Home-tiles */
 }
 
 /***************************** 3.3 Small devices only **********************************
@@ -360,7 +363,6 @@ h4 {
     /*height: 432px;*/
     height: 324px; /* 9/12 fraction size */
   }
-  /* END Main-content */
 }
 
 /************************** 3.4 Extra-small devices only *******************************
@@ -401,7 +403,6 @@ h4 {
     font-size: 1.2em;
     margin-right: 5px;
   }
-  /* END Header */
 
   /** Main-content *****************************************************/
   .container .jumbotron {
@@ -438,7 +439,6 @@ h4 {
     text-align: left;
     padding-top: 18px;
   }
-  /* END Footer */
 }
 
 /********************* 3.4 Super-small devices only (like iPhone 4) ********************
@@ -476,7 +476,6 @@ h4 {
   .navbar-header button.navbar-toggle {
     margin-top: -50px;
   }
-  /* END Header */
   
   /** Footer *****************************************************/
   #footer-copyright {
@@ -489,7 +488,4 @@ h4 {
   #navbar-footer a span {
     font-size: 1.5em;
   }
-  /* END Footer */
-
 }
-
