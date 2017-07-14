@@ -13,6 +13,12 @@ function pw_curso() {
     window.location = "https://kopi-calentito.github.io/org/curso.html";
   }
 }
+function pw_videos() {
+  var nombre = prompt("¡Contraseña! ¿Qué es el nombre de su profesor?", "");
+  if (nombre == "Marisa" || nombre == "marisa") {
+    window.location = "https://kopi-calentito.github.io/org/videos.html";
+  }
+}
 function pw_peliculas() {
   var nombre = prompt("¡Contraseña! ¿Qué es el nombre de su profesor?", "");
   if (nombre == "Marisa" || nombre == "marisa") {
