@@ -1,5 +1,9 @@
 ---- Date of drafts/versions added only after upload to Github ----
 
+DRAFT 14 - 2017 Jun 11
+===================================================================================================
+* Added the videos.html for course videos.
+
 DRAFT 13 - 2017 Jun 11
 ===================================================================================================
 * Revamped the navigation bar.
